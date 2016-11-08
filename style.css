@@ -1,0 +1,131 @@
+/*
+*  html5 doctor css reset | http://html5doctor.com/html-5-reset-stylesheet
+*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+ins{background-color:#ff9;color:#000;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+
+
+html,body{
+	width: 100%;
+	height: 100%;
+	color: white;
+}
+
+
+.herowrap{
+	width: 100%;
+	height: 100%;
+}
+
+.herobg, .heromg, .herofg{
+	width: 100%;
+	height: 100%;
+
+}
+
+.no-flick{-webkit-transform:translate3d(0,0,0); perspective: 1000px}
+
+.herobg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url("img/hero-bg.jpg")no-repeat center center/cover;
+	z-index: -100;
+}
+
+.heromg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url("img/hero-mg.png")no-repeat center center/cover;
+	z-index: -99;
+	-webkit-animation: mg 6s ease-in-out 2s infinite  normal;
+	   -moz-animation: mg 6s ease-in-out 2s infinite  normal;
+	    -ms-animation: mg 6s ease-in-out 2s infinite  normal;
+	     -o-animation: mg 6s ease-in-out 2s infinite  normal;
+	        animation: mg 6s ease-in-out 2s infinite  normal;
+	        -webkit-backface-visibility: hidden;
+}
+
+.herofg{
+	position: absolute;
+	top: 0;
+	background: url("img/hero-fg.png") no-repeat center ;
+	background-position: right;
+	z-index:-90;
+	animation: fg 6s ease-in-out 2s infinite;
+	-webkit-backface-visibility: hidden;
+}
+
+@keyframes fg {
+	from {
+		-webkit-transform: translate(0);
+		   -moz-transform: translate(0);
+		    -ms-transform: translate(0);
+		     -o-transform: translate(0);
+		        transform: translate(0);
+		
+	}
+
+	to {
+		-webkit-transform: translate(100px);
+		   -moz-transform: translate(100px);
+		    -ms-transform: translate(100px);
+		     -o-transform: translate(100px);
+		        transform: translate(100px);
+
+	}
+}
+
+@keyframes mg{
+	from{
+		-webkit-transform: translate(0);
+		   -moz-transform: translate(0);
+		    -ms-transform: translate(0);
+		     -o-transform: translate(0);
+		        transform: translate(0);
+	}
+	to{
+		-webkit-transform: translate(-100px);
+		   -moz-transform: translate(-100px);
+		    -ms-transform: translate(-100px);
+		     -o-transform: translate(-100px);
+		        transform: translate(-100px);
+
+	}
+}
+
+
+
+
+.topbar{
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 20px 0 0 0;
+	width: 100%;
+	height: 40%;
+}
+
+.topbar ul{
+	float:right;
+	margin:0 40px 0 0;
+}
+.topbar ul li{
+	float: left;
+	display: inline-block;
+	margin: 0 25px 0 0;
+
+}
